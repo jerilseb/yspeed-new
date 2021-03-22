@@ -1,0 +1,12 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250">
+  <defs>
+    <path d="M113.05 34.91l63.11 90.91-63.11 90.91h31.22l63.11-90.91-63.11-90.91h-31.22z" id="aaa"/>
+    <path d="M50.72 34.91l63.11 90.91-63.11 90.91h31.22l63.11-90.91-63.11-90.91H50.72z" id="bbb"/>
+  </defs>
+  <use xlink:href="#aaa" fill="#ffffff"/>
+  <use xlink:href="#aaa" fill-opacity="0" stroke="#000" stroke-width="0"/>
+  <g>
+    <use xlink:href="#bbb" fill="#ffffff"/>
+    <use xlink:href="#bbb" fill-opacity="0" stroke="#000" stroke-width="0"/>
+  </g>
+</svg>

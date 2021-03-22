@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "yspeed",
+    "description": "",
+    "version": "1.0.0",
+    "minimum_chrome_version": "66.0",
+    "icons": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png"
+    },
+    "permissions": ["storage"],
+    "background": { "scripts": ["background-scripts/hot-reload.js"] },
+    "content_scripts": [
+      {
+        "matches": ["https://youtube.com/*", "https://www.youtube.com/*"],
+        "js": ["content-scripts/main.js"],
+        "css": ["content-scripts/main.css"],
+        "run_at": "document_end",
+        "all_frames": false
+      }
+    ]
+}
