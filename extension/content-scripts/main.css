@@ -1,0 +1,58 @@
+.ys-speed-bar {
+    position: absolute;
+    height: calc(25px + 5 * var(--ys-video-scale));
+    top:0;
+    right: 0;
+    left: 0;
+    /* background: rgba(0,0,0,0.4); */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+    z-index: 10;
+    opacity: 1;
+    transition: opacity .2s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: calc(8px + var(--ys-video-scale));
+}
+
+.ytp-autohide .ys-speed-bar {
+    opacity: 0;
+}
+
+.ys-speed-bar .ys-speed-item {
+    display: flex;
+    color: #dadada;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    transition: transform .1s linear;
+    font-weight: 500;
+}
+
+.ys-speed-item:hover {
+    transform: scale(1.4);
+}
+
+.ys-speed-indicator {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    z-index: 10;
+    font-weight: 500;
+}
+
+.ytp-chrome-top, .ytp-gradient-top {
+    display: none !important;
+}

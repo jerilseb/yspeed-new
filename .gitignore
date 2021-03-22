@@ -1,4 +1,3 @@
 node_modules
-extension/content-scripts/*
 .cache
 dist
